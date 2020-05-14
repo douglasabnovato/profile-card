@@ -6,11 +6,12 @@
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
         <link rel="stylesheet"
               href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-        <title>GitHub Profiles</title>
+        <title>GitHub Profiles - Trending </title>
     </head>
     <body>
         <div id="app" class="ui container">
-            <h1>GitHub Profiles</h1>            
+            <h1>GitHub Profiles - Trending </h1>   
+            <h3>These are the developers building the hot tools today.</h3>         
             <div class="ui cards">
                 <github-user-card v-for="username in usernames" :username="username"></github-user-card>                
             </div>

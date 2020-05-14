@@ -4,7 +4,7 @@
 Vue School - Vue JS - Vue.js Components Fundamentals
 
 vue.js component exercises
-- [ ] #10 build a github user profile component
+- [x] #10 build a github user profile component
 
 .: Por Douglas A B Novato - @douglasabnovato
 - De [Vue School - Vue JS - Vue.js Components Fundamentals](https://vueschool.io/courses/vuejs-components-fundamentals)
