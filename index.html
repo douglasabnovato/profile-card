@@ -9,30 +9,35 @@
         <title>GitHub Profiles</title>
     </head>
     <body>
-        <div id="app" class="ui container mx-auto py-6">
-            <h1>GitHub Profiles</h1>
-            <github-user-card username="hootlex"></github-user-card>
+        <div id="app" class="ui container">
+            <h1>GitHub Profiles</h1>            
+            <div class="ui cards">
+                <github-user-card v-for="username in usernames" :username="username"></github-user-card>                
+            </div>
+        </div>
+        <script type="text/x-template" id="github-user-card-template">
             <div class="ui card">
                 <div class="image">
-                    <img src="https://semantic-ui.com/images/avatar2/large/kristy.png">
+                    <img :src="user.avatar_url">
                 </div>
                 <div class="content">
-                    <a class="header">Kristy</a>
+                    <a class="header" :href="`https://github.com/${username}`">{{ user.name }}</a>
                     <div class="meta">
-                        <span class="date">Joined in 2013</span>
+                        <span class="date">Joined in {{ user.created_at }}</span>
                     </div>
                     <div class="description">
-                        Kristy is an art director living in New York.
+                        {{ user.bio }}
                     </div>
                 </div>
                 <div class="extra content">
-                    <a>
-                      <i class="user icon"></i>
-                      22 Friends
+                    <a :href="`https://github.com/${username}?tab=followers`">
+                        <i class="user icon"></i>
+                        {{ user.followers }} Friends
                     </a>
                 </div>
             </div>
-        </div>
+        </script>
+
         <script src="https://unpkg.com/vue"></script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="app.js"></script>        
