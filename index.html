@@ -10,7 +10,7 @@
     </head>
     <body>
         <div id="app" class="ui container">
-            <h1>GitHub Profiles - Trending </h1>   
+            <h1>GitHub Profiles - Trending TOP {{ usernames.length }} </h1>   
             <h3>These are the developers building the hot tools today.</h3>         
             <div class="ui cards">
                 <github-user-card v-for="username in usernames" :username="username"></github-user-card>                
