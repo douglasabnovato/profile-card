@@ -4,14 +4,19 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
-        <title>Profiles</title>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+        <title>GitHub Profiles</title>
     </head>
     <body>
-        <div id="app" class="container mx-auto py-6">
-            <h5>@douglasabnovato</h5>
+        <div id="app" class="ui container mx-auto py-6">
+            <h1>GitHub Profiles</h1>
+            <github-user-card username="hootlex"></github-user-card>
+
         </div>
         <script src="https://unpkg.com/vue"></script>
-        <script src="app.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="app.js"></script>        
         <link rel="stylesheet" href="style.css">
     </body>
 </html>
