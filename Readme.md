@@ -21,6 +21,8 @@ vue.js component exercises
 ### O que é a aplicação
 
 - Aplicação que consulta a API e exibe as informações em detalhes de Trending GitHub Profiles
+- api github: `https://api.github.com/users/`+ username
+- a partir de um card modelo, ela cria os elementos conforme a resposta da consulta
 
 #### Tecnologias/ Ferramentas/ Bibliotecas
 
